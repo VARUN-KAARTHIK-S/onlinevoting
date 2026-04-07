@@ -1,0 +1,116 @@
+:root {
+  --primary: #0076CE; /* Corporate Blue */
+  --secondary: #00B1EB;
+  --dark: #121212;
+  --light: #F8FAFC;
+  --white: #FFFFFF;
+  --gray: #64748B;
+  --glass: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --font: 'Outfit', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  background: radial-gradient(circle at top left, #F8FAFC 0%, #E2E8F0 100%);
+  color: var(--dark);
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.glass-card {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 0.75rem 1.5rem;
+}
+
+button.primary {
+  background: var(--primary);
+  color: white;
+}
+
+button.primary:hover {
+  background: #005A9C;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 118, 206, 0.3);
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--gray);
+}
+
+.input-group input, .input-group select, .input-group textarea {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #E2E8F0;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 118, 206, 0.1);
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Specific UI elements for Voting system */
+.election-card {
+  transition: transform 0.3s ease;
+}
+
+.election-card:hover {
+  transform: scale(1.02);
+}
+
+.candidate-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.candidate-item:last-child {
+  border-bottom: none;
+}
