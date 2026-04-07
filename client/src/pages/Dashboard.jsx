@@ -382,7 +382,7 @@ const Dashboard = () => {
                       <td style={{ padding: '1rem' }}>{v.constituency}</td>
                       <td style={{ padding: '1rem', fontSize: '0.9rem', color: '#64748B' }}>{v.phoneNumber}<br/>{v.email}</td>
                       <td style={{ padding: '1rem' }}>
-                        {v.photoUrl && <img src={`https://onlinevoting-9vq1fvb1j-varun-kaarthik-s-projects.vercel.app/${v.photoUrl.replace('\\', '/')}`} alt={v.name} style={{ width: '40px', height: '40px', borderRadius: '50%', objectFit: 'cover' }} />}
+                        {v.photoUrl && <img src={`https://onlinevoting-tau.vercel.app/${v.photoUrl.replace('\\', '/')}`} alt={v.name} style={{ width: '40px', height: '40px', borderRadius: '50%', objectFit: 'cover' }} />}
                       </td>
                       <td style={{ padding: '1rem', textAlign: 'center' }}>
                         {v.isApproved ? (

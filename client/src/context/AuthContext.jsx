@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const AuthContext = createContext();
 
-axios.defaults.baseURL = 'https://onlinevoting-9vq1fvb1j-varun-kaarthik-s-projects.vercel.app/';
+axios.defaults.baseURL = 'https://onlinevoting-tau.vercel.app/';
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
