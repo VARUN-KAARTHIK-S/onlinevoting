@@ -187,13 +187,13 @@ const ElectionDetails = () => {
                 onClick={() => setSelectedCandidate(candidate)}
               >
                 {candidate.photoUrl && (
-                  <img src={`https://onlinevoting-gold.vercel.app/${candidate.photoUrl.replace('\\', '/')}`} alt={candidate.name} style={{ width: '50px', height: '50px', borderRadius: '50%', objectFit: 'cover' }} />
+                  <img src={`https://onlinevoting-9vq1fvb1j-varun-kaarthik-s-projects.vercel.app/${candidate.photoUrl.replace('\\', '/')}`} alt={candidate.name} style={{ width: '50px', height: '50px', borderRadius: '50%', objectFit: 'cover' }} />
                 )}
                 <div style={{ flex: 1 }}>
                   <h4 style={{ margin: 0, fontSize: '1.1rem' }}>{candidate.name}</h4>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', margin: '0 0 0.2rem 0' }}>
                     {candidate.partySymbolUrl && (
-                      <img src={`https://onlinevoting-gold.vercel.app/${candidate.partySymbolUrl.replace('\\', '/')}`} alt={candidate.partyName} style={{ height: '18px', width: '18px', objectFit: 'contain' }} />
+                      <img src={`https://onlinevoting-9vq1fvb1j-varun-kaarthik-s-projects.vercel.app/${candidate.partySymbolUrl.replace('\\', '/')}`} alt={candidate.partyName} style={{ height: '18px', width: '18px', objectFit: 'contain' }} />
                     )}
                     <p style={{ margin: 0, color: '#64748B', fontSize: '0.85rem' }}>{candidate.partyName}</p>
                   </div>
@@ -289,7 +289,7 @@ const ElectionDetails = () => {
           <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', background: 'rgba(0,0,0,0.5)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 1000, backdropFilter: 'blur(4px)' }} onClick={() => setSelectedCandidate(null)}>
             <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="glass-card" style={{ width: '600px', background: 'white' }} onClick={(e) => e.stopPropagation()}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
-                <img src={`https://onlinevoting-gold.vercel.app/${selectedCandidate.photoUrl.replace('\\', '/')}`} alt={selectedCandidate.name} style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover' }} />
+                <img src={`https://onlinevoting-9vq1fvb1j-varun-kaarthik-s-projects.vercel.app/${selectedCandidate.photoUrl.replace('\\', '/')}`} alt={selectedCandidate.name} style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover' }} />
                 <div>
                   <h2 style={{ margin: 0 }}>Candidate Affidavit</h2>
                   <p style={{ color: '#64748B', margin: 0 }}>Review the credentials of **{selectedCandidate.name}**.</p>
@@ -306,7 +306,7 @@ const ElectionDetails = () => {
               <div style={{ background: '#F8FAFC', padding: '1.5rem', borderRadius: '12px', marginBottom: '2rem' }}>
                 <h4>Official Document</h4>
                 <p style={{ fontSize: '0.8rem', color: '#64748B', marginBottom: '1rem' }}>The full legal affidavit submitted to the Election Commission.</p>
-                <a href={`https://onlinevoting-gold.vercel.app/${selectedCandidate.affidavit.affidavitFileUrl}`} target="_blank" rel="noreferrer" style={{ color: '#0076CE', textDecoration: 'none', fontWeight: 'bold' }}>📄 View PDF Affidavit</a>
+                <a href={`https://onlinevoting-9vq1fvb1j-varun-kaarthik-s-projects.vercel.app/${selectedCandidate.affidavit.affidavitFileUrl}`} target="_blank" rel="noreferrer" style={{ color: '#0076CE', textDecoration: 'none', fontWeight: 'bold' }}>📄 View PDF Affidavit</a>
               </div>
 
               <button className="primary" onClick={() => setSelectedCandidate(null)} style={{ width: '100%' }}>Close Profile</button>
